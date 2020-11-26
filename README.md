@@ -72,7 +72,7 @@
 ## django2理解
 对于我来说，我目前的理解也仅仅是知道怎么用而已，这里就简要的说一下吧，参考这个[详细教程](https://www.runoob.com/django/django-tutorial.html)
 这里我直接拿项目来进行解释。
-![项目树形图](./images/tree.PNG)
+![项目树形图](https://github.com/ay1Jin/website/blob/main/doc/img/tree.PNG)
 - apps:如果app过多的话，可以整合到一个文件夹中。
 - extra_apps:例如我们引入的xadmin就需要放到这里面
 - mysite:里面存放了我们这个项目的基本文件
