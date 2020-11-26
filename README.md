@@ -1,8 +1,9 @@
 # django2总结
 
- 1. 部署问题
- 2. django2和xadmin
- 3. 常见问题及其解决方案
+ 1. 项目地址(http://tools.ayjin.cn/)
+ 2. 部署问题
+ 3. django2和xadmin
+ 4. 常见问题及其解决方案
 
 ## 部署问题
 1. 使用环境:
