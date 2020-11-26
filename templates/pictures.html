@@ -1,0 +1,59 @@
+{% extends 'index.html' %}
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>图库</title>
+    {% load static %}
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/css/globalCss.css" rel="stylesheet">
+    <script src="/static/js/jquery-3.5.1.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    <script src="/static/js/jqthumb.js"></script>
+	<script>
+		$(function(){
+			$('.dowebok2 img').jqthumb({
+				width: 283,
+				height: 189,
+				after: function(imgObj){
+					imgObj.css('opacity', 0).animate({opacity: 1}, 2000);
+				}
+			});
+		});
+</script>
+</head>
+<body>
+{% block mainbody %}
+    <div class="row">
+     {% for foo in pageInfo.object_list %}
+         <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" style="margin-top: 5px">
+            <div class="hovereffect dowebok2">
+                <img class="img-responsive" src="{{ foo.path }}" alt="">
+                <div class="overlay">
+                   <h2>{{ foo.time }}</h2>
+                   <a class="info" href="/picture/{{ foo.title }}/{{ foo.time }}/{{ foo.path }}">link here</a>
+                </div>
+            </div>
+        </div>
+     {% endfor %}
+    </div>
+    <div class="row">
+            <nav aria-label="..." style="text-align: center">
+          <ul class="pagination">
+              {% if pageInfo.has_previous %}
+                  <li><a href="/pictures/page/{{ pageInfo.previous_page_number }}" aria-label="Previous"><span aria-hidden="true"><<</span></a></li>
+              {% else %}
+                  <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true"><<</span></a></li>
+              {% endif %}
+              {% if pageInfo.has_next %}
+                  <li><a href="/pictures/page/{{ pageInfo.next_page_number }}" aria-label="Next"><span aria-hidden="true">>></span></a></li>
+              {% else %}
+                  <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">>></span></a></li>
+              {% endif %}
+          </ul>
+        </nav>
+    </div>
+{% endblock %}
+</body>
+</html>

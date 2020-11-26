@@ -1,0 +1,28 @@
+{% extends 'index.html' %}
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>图片</title>
+    {% load static %}
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/css/globalCss.css" rel="stylesheet">
+    <script src="/static/js/jquery-3.5.1.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+</head>
+<body>
+{% block mainbody %}
+      <div class="row">
+          <h4 class="text-center">
+              <span class="label label-primary">{{ ImgName }}</span>
+              <span class="label label-info">{{ UploadTime }}</span>
+              <span class="label label-success"><a href="{{ ImgLink }}" download="下载">下载图片</a></span>
+          </h4>
+      </div>
+      <div class="row" style="margin-top: 10px">
+          <img class="img-responsive center-block" src="{{ ImgLink }}" alt="pic">
+      </div>
+{% endblock %}
+</body>
+</html>

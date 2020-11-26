@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>图库</title>
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/globalCss.css" rel="stylesheet">
+    <script src="./js/jquery-3.5.1.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/jqthumb.js"></script>
+	<script>
+		$(function(){
+			$('.dowebok2 img').jqthumb({
+				width: 283,
+				height: 189,
+				after: function(imgObj){
+					imgObj.css('opacity', 0).animate({opacity: 1}, 2000);
+				}
+			});
+		});
+</script>
+</head>
+<body>
+<div class="container">
+  <header>
+    <div class="row center-block">
+      <nav class="navbar navbar-default">
+  <div class="container-fluid" style="background-color: #494e5fa8;">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <!--这个不能删，保证手机端存在按钮-->
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar" style="background-color:black;"></span>
+        <span class="icon-bar" style="background-color:black;"></span>
+        <span class="icon-bar" style="background-color:black;"></span>
+      </button>
+      <a class="navbar-brand" href="#">
+        <img src="./img/fav.png" alt="fav" width="20px" height="20px">
+      </a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav" id="headera">
+        <li><a href="index.html">主页</a></li>
+        <li class="active"><a href="pictures.html">图库 <span class="sr-only">(current)</span></a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">工具 <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">项目 <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">联系我 <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">关于我</a></li>
+            <li><a href="#">问题反馈</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-right">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+    </div>
+  </header>
+    <hr>
+    <div class="row">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" style="margin-top: 5px">
+            <div class="hovereffect dowebok2">
+                <img class="img-responsive" src="./img/picSave/p10.jpg" alt="">
+                <div class="overlay">
+                   <h2>2020-11-19</h2>
+                   <a class="info" href="#">link here</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" style="margin-top: 5px">
+            <div class="hovereffect dowebok2">
+                <img class="img-responsive" src="./img/picSave/p11.jpg" alt="">
+                <div class="overlay">
+                   <h2>2020-11-19</h2>
+                   <a class="info" href="#">link here</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" style="margin-top: 5px">
+            <div class="hovereffect dowebok2">
+                <img class="img-responsive" src="./img/picSave/p13.jpg" alt="">
+                <div class="overlay">
+                   <h2>2020-11-19</h2>
+                   <a class="info" href="#">link here</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" style="margin-top: 5px">
+            <div class="hovereffect dowebok2">
+                <img class="img-responsive" src="./img/picSave/p18.jpg" alt="">
+                <div class="overlay">
+                   <h2>2020-11-19</h2>
+                   <a class="info" href="#">link here</a>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix visible-sm-block"></div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" style="margin-top: 5px">
+            <div class="hovereffect dowebok2">
+                <img class="img-responsive" src="./img/picSave/p10.jpg" alt="">
+                <div class="overlay">
+                   <h2>2020-11-19</h2>
+                   <a class="info" href="#">link here</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" style="margin-top: 5px">
+            <div class="hovereffect dowebok2">
+                <img class="img-responsive" src="./img/picSave/p11.jpg" alt="">
+                <div class="overlay">
+                   <h2>2020-11-19</h2>
+                   <a class="info" href="#">link here</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" style="margin-top: 5px">
+            <div class="hovereffect dowebok2">
+                <img class="img-responsive" src="./img/picSave/p13.jpg" alt="">
+                <div class="overlay">
+                   <h2>2020-11-19</h2>
+                   <a class="info" href="#">link here</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" style="margin-top: 5px">
+            <div class="hovereffect dowebok2">
+                <img class="img-responsive" src="./img/picSave/p18.jpg" alt="">
+                <div class="overlay">
+                   <h2>2020-11-19</h2>
+                   <a class="info" href="#">link here</a>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix visible-sm-block"></div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" style="margin-top: 5px">
+            <div class="hovereffect dowebok2">
+                <img class="img-responsive" src="./img/picSave/p10.jpg" alt="">
+                <div class="overlay">
+                   <h2>2020-11-19</h2>
+                   <a class="info" href="#">link here</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" style="margin-top: 5px">
+            <div class="hovereffect dowebok2">
+                <img class="img-responsive" src="./img/picSave/p11.jpg" alt="">
+                <div class="overlay">
+                   <h2>2020-11-19</h2>
+                   <a class="info" href="#">link here</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" style="margin-top: 5px">
+            <div class="hovereffect dowebok2">
+                <img class="img-responsive" src="./img/picSave/p13.jpg" alt="">
+                <div class="overlay">
+                   <h2>2020-11-19</h2>
+                   <a class="info" href="#">link here</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" style="margin-top: 5px">
+            <div class="hovereffect dowebok2">
+                <img class="img-responsive" src="./img/picSave/p18.jpg" alt="">
+                <div class="overlay">
+                   <h2>2020-11-19</h2>
+                   <a class="info" href="#">link here</a>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix visible-sm-block"></div>
+        <nav aria-label="..." style="text-align: center">
+          <ul class="pagination">
+            <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true"><<</span></a></li>
+            <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#" aria-label="Next"><span aria-hidden="true">>></span></a></li>
+          </ul>
+        </nav>
+    </div>
+
+
+  <footer>
+      <div class="row">
+          <hr>
+          <div class="text-center" style="font-size: 12.8px;color: #BBBBBB">
+            <span>© 2020-2021 Design by ayjin - <a href="#">1 Posts crafted</a></span>
+            <span> ♥
+                <a href="#">zx</a> &
+                <a href="#">self</a> By
+                <a href="#">self</a>
+            </span>
+            <div class="powered_by">
+                <a href="#">文章 RSS</a> |
+                <a href="#">评论 RSS</a> |
+                <a href="#" title="一梦江湖">文章归档</a> |
+                <a href="#" title="Sitemap">Sitemap</a> |
+                <a href="https://tongji.baidu.com" title="百度统计">百度统计</a> |
+                <a href="http://beian.miit.gov.cn" target="_blank">赣ICP备20002372号</a>
+            </div>
+        </div>
+      </div>
+
+  </footer>
+
+</div>
+</body>
+</html>

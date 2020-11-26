@@ -1,0 +1,6 @@
+from django.apps import AppConfig
+
+
+class ServermanagerConfig(AppConfig):
+    name = 'servermanager'
+    verbose_name = '内容管理'
